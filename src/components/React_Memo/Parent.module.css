@@ -1,0 +1,36 @@
+.parent {
+    background-color: beige;
+    padding: 32px;
+}
+.parent h3{
+    padding: 16px;
+}
+
+.parent button {
+    margin: 32px;
+    padding: 16px;
+    border-radius: 50px;
+    background-color: rgb(41, 95, 194);
+    font-size: 18px;
+    color: rgb(254, 254, 254);
+    font-weight: 700;
+}
+
+.parent > input {
+    font-size: 16px;
+    line-height: 20px;
+    height: 30px;
+    padding: 8px;
+    background-color: azure;
+    color: black;
+}
+
+.loader {
+    top: 50%;
+    margin: 16px;
+    margin: 0 auto;
+}
+
+.child {
+    margin: 16px;
+}
