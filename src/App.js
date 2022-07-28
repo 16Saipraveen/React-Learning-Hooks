@@ -1,3 +1,4 @@
+
 import "./App.css";
 import ContextTutorial from "./components/Hooks/Context/ContextTutorial";
 import EffectTutorial from "./components/Hooks/EffectTutorial";
@@ -8,6 +9,7 @@ import ReducerTutorial from "./components/Hooks/ReducerTutorial";
 import RefTutorial from "./components/Hooks/RefTutorial";
 import StateTutorial from "./components/Hooks/StateTutorial";
 import Parent from "./components/React_Memo/Parent";
+import RoutesWrap from './components/RouterV6/RoutesWrap'
 
 console.log("App render");
 function App() {
@@ -22,6 +24,7 @@ function App() {
       <ImperativeHandle />
       <ContextTutorial  />
       <MemoTutorial />
+      <RoutesWrap />
     </div>
   );
 }

@@ -1,0 +1,23 @@
+.navbar {
+    text-align: right;
+}
+.navbar li {
+    display: inline-block;
+    padding: 10px 5px;
+}
+
+.navbar__link{
+    text-decoration: none;
+    color: burlywood;
+}
+/* .navbar .active {
+    color: slateblue;
+} */
+.navbar__link:hover {
+    color: brown;
+}
+
+.navbar .active {
+    color: green;
+    background-color: chocolate;
+}
