@@ -10,6 +10,9 @@ import RefTutorial from "./components/Hooks/RefTutorial";
 import StateTutorial from "./components/Hooks/StateTutorial";
 import Parent from "./components/React_Memo/Parent";
 import RoutesWrap from './components/RouterV6/RoutesWrap'
+import { PaginationTable } from "./components/Table/PaginationTable";
+// import Form from './components/Form/Form'
+import { ReactTable } from "./components/Table/ReactTable";
 
 console.log("App render");
 function App() {
@@ -25,6 +28,9 @@ function App() {
       <ContextTutorial  />
       <MemoTutorial />
       <RoutesWrap />
+      {/* <Form /> */}
+      {/* <PaginationTable /> */}
+      <ReactTable />
     </div>
   );
 }
