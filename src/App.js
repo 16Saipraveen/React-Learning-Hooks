@@ -1,5 +1,6 @@
 
 import "./App.css";
+import HerosWrapper from "./components/ErrorBoundary/HerosWrapper";
 import ContextTutorial from "./components/Hooks/Context/ContextTutorial";
 import EffectTutorial from "./components/Hooks/EffectTutorial";
 import ImperativeHandle from "./components/Hooks/ImperativeHandle/ImperativeHandle";
@@ -28,6 +29,7 @@ function App() {
       <ContextTutorial  />
       <MemoTutorial />
       <RoutesWrap />
+      <HerosWrapper />
       {/* <Form /> */}
       {/* <PaginationTable /> */}
       <ReactTable />

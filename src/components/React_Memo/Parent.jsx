@@ -16,12 +16,18 @@ const Parent = () => {
   const [count, setCount] = useState(0);
   const [childName, setChildName] = useState("Default");
   const inputRef = useRef("");
+  const ctRef = useRef(0)
 
   const handleCallback = useCallback(() => {
     setChildName(inputRef.current.value);
   }, [inputRef]);
 
+  const handleClick = () => {
+    ctRef.current += 1;
+  }
+
   console.log("Parent component rendered");
+  console.log(ctRef.current)
   return (
     <div className={styles.parent}>
       <div>Parent</div>
@@ -34,6 +40,8 @@ const Parent = () => {
       <Suspense fallback={<SyncLoader color={"green"} />}>
         <Child name={childName} className={styles.child} />
       </Suspense>
+      <h4>{ctRef.current}</h4>
+      <button onClick={handleClick}>Counter 2</button>
     </div>
   );
 };

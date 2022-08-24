@@ -11,6 +11,8 @@ const reducer = (state, action) => {
       return { count: state.count + 1, showText: state.showText };
     case "toggleShowText":
       return { count: state.count, showText: !state.showText };
+    case 'Increase': 
+      return { count: state.count + action.payload, showText: state.showText };
     default:
       return state;
   }
@@ -30,6 +32,11 @@ const ReducerTutorial = () => {
         >
           Click Here
         </button>
+
+        <button onClick={() => {
+            dispatch({ type: "Increase", payload: 5 });
+            // dispatch({ type: "toggleShowText" });
+          }}>Increase 5</button>
   
         {state.showText && <p>This is a text</p>}
       </div>
