@@ -11,7 +11,7 @@ const Login = () => {
     if (!loginCondition) {
       navigate("/login");
     }
-  });
+  },[]);
   return (
     <div>
       Login

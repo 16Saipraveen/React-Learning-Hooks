@@ -1,17 +1,17 @@
-
 import "./App.css";
 import ClassComponents from "./components/ClassComponents/ClassComponents";
 import HerosWrapper from "./components/ErrorBoundary/HerosWrapper";
 import ContextTutorial from "./components/Hooks/Context/ContextTutorial";
 import EffectTutorial from "./components/Hooks/EffectTutorial";
 import ImperativeHandle from "./components/Hooks/ImperativeHandle/ImperativeHandle";
-import LayoutEffectTutorial  from "./components/Hooks/LayoutEffectTutorial";
+import LayoutEffectTutorial from "./components/Hooks/LayoutEffectTutorial";
 import MemoTutorial from "./components/Hooks/MemoHook";
 import ReducerTutorial from "./components/Hooks/ReducerTutorial";
 import RefTutorial from "./components/Hooks/RefTutorial";
 import StateTutorial from "./components/Hooks/StateTutorial";
 import Parent from "./components/React_Memo/Parent";
-import RoutesWrap from './components/RouterV6/RoutesWrap'
+import RenderPropsEg from "./components/RenderProps/RenderPropsEg";
+import RoutesWrap from "./components/RouterV6/RoutesWrap";
 import { PaginationTable } from "./components/Table/PaginationTable";
 // import Form from './components/Form/Form'
 import { ReactTable } from "./components/Table/ReactTable";
@@ -27,12 +27,13 @@ function App() {
       <RefTutorial />
       <LayoutEffectTutorial />
       <ImperativeHandle />
-      <ContextTutorial  />
+      <ContextTutorial />
       <MemoTutorial />
       <RoutesWrap />
       <HerosWrapper />
 
       <ClassComponents />
+      <RenderPropsEg />
       {/* <Form /> */}
       {/* <PaginationTable /> */}
       <ReactTable />

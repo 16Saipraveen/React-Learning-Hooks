@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 
 export class StateTutorial extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       inputValue: "Pedro",
       counter: 0,
+      obj: {
+        name: 'Hello'
+      }
     };
+    console.log(this.props.name)
   }
   onChange(event) {
     const newValue = event.target.value;
@@ -15,16 +19,16 @@ export class StateTutorial extends Component {
 
   incrementCount() {
     this.setState(
-    //   {
-    //     counter: this.state.counter + 1,
-    //   },
-    //   //callback for setState - to execute code after setState
-    //   () => {
-    //     console.log("Callback value for state", this.state.counter); 
-    //   }
-    prevState => ({
-        counter: prevState.counter + 1
-    })
+      {
+        counter: this.state.counter + 1,
+      },
+      //callback for setState - to execute code after setState
+      // () => {
+      //   console.log("Callback value for state", this.state.counter); 
+      // }
+    // prevState => ({
+    //     counter: prevState.counter + 1
+    // })
     );
   }
 
@@ -42,6 +46,7 @@ export class StateTutorial extends Component {
     return (
       <div>
         <h3>state and setState</h3>
+        <h4>{this.props.name}</h4>
         <input
           placeholder="enter something..."
           onChange={() => this.onChange()}
